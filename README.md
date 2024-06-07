@@ -2,7 +2,7 @@
 
 
 ## Introduction
-In this part of the series, we will create a new Ubuntu VM instance in GCP to serve as our agent node machine. We will then register this new worker node instance in Jenkins for further use. This guide includes detailed steps to set up and configure the agent node in Jenkins.
+ we will create a new Ubuntu VM instance in GCP to serve as our agent node machine. We will then register this new worker node instance in Jenkins for further use. This guide includes detailed steps to set up and configure the agent node in Jenkins.
 
 ## Step-by-Step Guide
 
