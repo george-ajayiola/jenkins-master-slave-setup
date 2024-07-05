@@ -70,6 +70,7 @@
     ```sh
     sudo cat ~/.ssh/id_rsa.pub
     ```
+    This will output the public key generated which we will add in the agent machine. copy the text which is seen in output.
 
 ### Step 6: Add Public Key Details in Agent Machine
 1. **Create Authorized Keys File:**
@@ -79,6 +80,9 @@
 
 2. **Paste Public Key:**
     - Copy the public key from the controller node and paste it into the `authorized_keys` file.
+    - Once you pasted the public keys in the authorized_keys file, come out of the file by entering :wq!
+
+ And that’s it, you should be able to connect to the agent machine from controller node via SSH. Additionally, you can verify it by running below command (Note: agent-publicip address will be your Ubuntu agent machine external ip address)
 
 3. **Verify SSH Connection:**
     ```sh
@@ -103,8 +107,15 @@
         ```sh
         sudo cat ~/.ssh/id_rsa
         ```
+   Note: Make sure you copy the whole key including the below without missing anything)
+   
+     — — -BEGIN RSA PRIVATE KEY — — -
+   
+     — — -
+   
+     — — -END RSA PRIVATE KEY — — -
 
-4. **Select Host Key Verification Strategy:**
+5. **Select Host Key Verification Strategy:**
     - `Manually trusted key Verification strategy`
     - Click `Save`.
 
